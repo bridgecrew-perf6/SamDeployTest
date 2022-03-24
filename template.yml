@@ -24,7 +24,7 @@ Resources:
 
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: hello-world-1
+    Name: serverlessrepo-SCR-test
     Description: hello world
     Author: user1
     # SpdxLicenseId: Apache-2.0
