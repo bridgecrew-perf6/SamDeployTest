@@ -21,3 +21,16 @@ Resources:
       Runtime: nodejs12.x
       Architectures:
         - x86_64
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: hello_world
+    Description: hello world
+    Author: user1
+    SpdxLicenseId: Apache-2.0
+    LicenseUrl: LICENSE.txt
+    ReadmeUrl: README.md
+    Labels: ['tests']
+    HomePageUrl: https://github.com/user1/my-app-project
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://github.com/user1/my-app-project
