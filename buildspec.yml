@@ -7,8 +7,9 @@ phases:
     commands:
       - ls -al
       - pwd
-      - export BUCKET=test-lambda-ath-pl-bucket
-      - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+      - export BUCKET=test-lambda-ath-pl-bucket-max
+      # - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+      - sam package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
   type: zip
   files:
