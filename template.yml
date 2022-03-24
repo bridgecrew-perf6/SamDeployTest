@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  test-lambda-deploy-typescript
+  test-lambda-deploy-typescript-max
 
   Sample SAM Template for test-lambda-deploy-typescript
   
@@ -14,7 +14,7 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      FunctionName: 'serverlessrepo-aws-serverles-ServerlessRepoPublish-py9G29bl017Q'
+      FunctionName: 'hello-world-1'
       Description: test lambda-9
       CodeUri: src/
       Handler: app.lambdaHandler
@@ -24,7 +24,7 @@ Resources:
 
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: hello-world
+    Name: hello-world-1
     Description: hello world
     Author: user1
     # SpdxLicenseId: Apache-2.0
@@ -33,4 +33,4 @@ Metadata:
     # Labels: ['tests']
     # HomePageUrl: https://github.com/user1/my-app-project
     # SemanticVersion: 0.0.1
-    # SourceCodeUrl: https://github.com/user1/my-app-project
+    SourceCodeUrl: https://github.com/maxHyeon/SamDeployTest
